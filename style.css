@@ -25,10 +25,6 @@ body {
   background-color: #464646;
 }
 
-#navbar {
-  /* always stays in the same place even if the page is scrolled */
-  position: fixed;
-}
 #navbarBackup {
   /* always stays in the same place even if the page is scrolled */
   position: fixed;
@@ -42,17 +38,17 @@ body {
   text-align: center;
 }
 
-#navbar a {
+#navbarBackup a {
   /* Use imported Roboto font */
   font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 14pt;
-  padding: 18px 0px 18px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 /* Change appearance when mouseover */
-#navbar a:hover {
+#navbarBackup a:hover {
   background-color: #87CEEB;
   color: black;
 }
@@ -75,6 +71,7 @@ body {
   align-items: center;
   /* Center the text horizontally */
   text-align: center;
+  padding: 0 20px 0 20px;
 }
 
 #home-h1{
