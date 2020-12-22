@@ -1,3 +1,4 @@
+/* Setting a background photo that has a fixed position */
 body {
   /* Remove margins and paddings */
   margin: 0;
@@ -25,7 +26,7 @@ body {
   background-color: #464646;
 }
 
-#navbarBackup {
+#navbar {
   /* always stays in the same place even if the page is scrolled */
   position: fixed;
   width: 100%;
@@ -38,23 +39,19 @@ body {
   text-align: center;
 }
 
-#navbarBackup a {
+#navbar a {
   /* Use imported Roboto font */
   font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 12pt;
   padding: 10px 0px 10px 0px;
 }
 
 /* Change appearance when mouseover */
-#navbarBackup a:hover {
-  background-color: #87CEEB;
+#navbar a:hover {
+  background-color: silver;
   color: black;
-}
-
-.container {
-  width: 100%;
 }
 
 /* Hello, I am a Web Developer. */
@@ -76,7 +73,7 @@ body {
 
 #home-h1{
   font-family: 'Comfortaa', cursive;
-  font-size: 30pt;
+  font-size: 28pt;
 }
 
 #home-h2{
@@ -89,7 +86,7 @@ body {
 #projects{
   width: 100%;
   font-family: "Roboto", sans-serif;
-  background-color: LightGray;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,78 +97,21 @@ body {
 }
 
 #projects-h1{
-  font-size: 32px;
+  font-size: 24pt;
+  padding: 20px;
+  /* font-weight: bold; */
 }
 
-
-.project-tile{
-  display: grid;
-  grid-template-columns: 350px 350px 350px 350px;
-  grid-template-rows: 320px;
-  grid-gap: 20px;
-}
-
-.project-tile a {
-  font-family: monospace;
+.customCardShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
-  text-decoration: none;
-  font-size: 18px;    
-  /*display: grid;
-  grid-template-rows: 80% 20%;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px 10px 20px;
-  border: solid;
-  border-color: transparent;
 }
 
-.project-tile a:hover {
-  border-color: black;
+.customCardShadow:hover {
+  background-color: silver;
 }
 
-.size-img {
-  width: 200px;
-  height: 200px;
-}
-
-#tile-1 {
-  background: LightSalmon;
-}
-
-#tile-2 {
-  background: LightSkyBlue;
-}
-
-#tile-3 {
-  background: LightPink;
-}
-
-#tile-4 {
-  background: PaleGreen;
-}
-
-@media (max-width: 1480px)  {
-  /* For max-width and down: */
-  .project-tile{
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 320px 320px;
-  }
-}
-
-@media (max-width: 1080px)  {
-  /* For max-width and down: */
-
-  .project-tile {
-    grid-template-columns: 1fr;
-    grid-template-rows: 320px 320px 320px 320px;
-  }
-}
-
-
-
-#contact {
+.customContactSection {
   width: 100%;
   height: auto;
   background: SeaGreen;
@@ -185,27 +125,25 @@ body {
 }
 
 #contact h1 {
-  font-size: 36px;
+  font-size: 24pt;
+  /* font-weight: bold; */
 }
 
-.contact-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.customColWidth {
+  width: 400px;
 }
 
-.contact-link {
+.customContactBtn {
   color: black;
   text-decoration: none;
-  font-size: 20px;
-  font-family: monospace;
+  font-size: 16pt;
+  /* font-family: monospace; */
   padding: 10px;
   border: solid;
   border-color: transparent;
 }
 
-.contact-link:hover {
+.customContactBtn:hover {
   border-color: black;
 }
 
@@ -219,5 +157,5 @@ footer {
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  padding: 14px 0px 14px 0px;
+  padding: 20px 0px 14px 0px;
 }
