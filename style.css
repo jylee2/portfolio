@@ -1,3 +1,8 @@
+/* Scrolls smoothly when clicking on navbar buttons */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Setting a background photo that has a fixed position */
 body {
   /* Remove margins and paddings */
@@ -24,10 +29,26 @@ body {
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #464646;
+
+  /* Bring section to the back of the page */
+  z-index: -1;
+}
+
+.customBgText{
+  /* Bring section to the back of the page */
+  z-index: -1;
+  font-size: 10pt;
+  color: white;
+  text-align: left;
+  /* Always stays in the same place even if the page is scrolled */
+  position: fixed;
+  /* Shift to the bottom right corner */
+  padding: 90vh 0 0 85vw;
+  opacity: 0.6;
 }
 
 #navbar {
-  /* always stays in the same place even if the page is scrolled */
+  /* Always stays in the same place even if the page is scrolled */
   position: fixed;
   width: 100%;
   display: grid;
@@ -37,15 +58,18 @@ body {
   background: black;
   background-image: linear-gradient(90deg, #272727, black);
   text-align: center;
+  /* Bring navbar to the front */
+  z-index: 1;
 }
 
 #navbar a {
   /* Use imported Roboto font */
   font-family: "Roboto", sans-serif;
   color: white;
+  /* Text doesn't get underlined */
   text-decoration: none;
-  font-size: 12pt;
-  padding: 10px 0px 10px 0px;
+  font-size: 13pt;
+  padding: 5px 0px 5px 0px;
 }
 
 /* Change appearance when mouseover */
@@ -54,11 +78,13 @@ body {
   color: black;
 }
 
+#navbar a:active {
+  background-color: white;
+}
+
 /* Hello, I am a Web Developer. */
-#home {
+.customDivCenter {
   width: 100%;
-  height: 85vh;
-  color: white;
   display: flex;
   /* The flexible items are displayed vertically, as a column */
   flex-direction: column;
@@ -68,31 +94,31 @@ body {
   align-items: center;
   /* Center the text horizontally */
   text-align: center;
+}
+
+.customHomeSection {
+  /* 100% of screen height */
+  height: 100vh;
   padding: 0 20px 0 20px;
 }
 
-#home-h1{
+#home-title{
   font-family: 'Comfortaa', cursive;
   font-size: 28pt;
+  font-weight: bold;
+  color: white;
 }
 
-#home-h2{
+#home-description{
   font-family: monospace;
-  font-style: italic;
-  font-size: 20pt;
+  font-size: 14pt;
+  color: white;
 }
 
 /* Projects section */
-#projects{
-  width: 100%;
+.customProjectsSection{
   font-family: "Roboto", sans-serif;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*display: grid;
-  grid-template-rows: 30% 70%;*/
   padding: 50px 20px 80px 20px;
 }
 
@@ -108,20 +134,21 @@ body {
 }
 
 .customCardShadow:hover {
+  /* Text doesn't get underlined */
+  text-decoration: none;
   background-color: silver;
+  color: black;
+}
+
+.customCardText {
+  font-size: 13pt;
 }
 
 .customContactSection {
-  width: 100%;
   height: auto;
-  background: SeaGreen;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "Roboto", sans-serif;
-  padding: 50px 0% 50px 0%;
+  padding: 50px 20px 40px 20px;
 }
 
 #contact h1 {
@@ -129,14 +156,10 @@ body {
   /* font-weight: bold; */
 }
 
-.customColWidth {
-  width: 400px;
-}
-
 .customContactBtn {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-size: 16pt;
+  font-size: 14pt;
   /* font-family: monospace; */
   padding: 10px;
   border: solid;
@@ -147,15 +170,9 @@ body {
   border-color: black;
 }
 
-footer {
-  width: 100%;
-  background: black;
+.customFooterSection {
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  padding: 20px 0px 14px 0px;
+  font-size: 12pt;
+  padding: 20px 0px 10px 0px;
 }
