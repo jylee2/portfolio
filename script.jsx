@@ -4,25 +4,33 @@ class MainReactComponent extends React.Component {
     render() {
         return (
             <div>
-                <div id="navbar">
-                    <a href="#projects">Projects</a>
-                    <a href="#home">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <nav className="navbar fixed-top navbar-expand navbar-dark bg-dark customNavbar">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="#home">
+                                <i className="fa fa-home" aria-hidden="true"></i> Home
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
                 <div className="customBgText">
                     Tasmania <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Jun
                 </div>
             
-                <section id="home" className="customDivCenter customHomeSection">
+                <section id="home" className="container customDivCenter customHomeSection">
                     <h1 id="home-title">Hello, I am a Web Developer.</h1>
                     <p id="home-description">Jun Yi Lee, PhD</p>
                 </section>
             
                 <section id="projects" className="customDivCenter customProjectsSection">
-                    <h1 id="projects-h1">Portfolio</h1>
+                    <h1 id="projects-h1">Personal Projects</h1>
                     <div className="row">
                         <div className="col-md-2"></div>
                         <div className="col-md-8">
@@ -55,7 +63,7 @@ class MainReactComponent extends React.Component {
                                 </div>
                                 </a>
                                 <a className="card text-center customCardShadow" href="https://jylee2.github.io/drum-machine/" target="_blank">
-                                <img className="card-img-top" src="https://scontent.fkul4-4.fna.fbcdn.net/v/t1.0-9/132552820_10158205671735892_2367045891760795688_n.jpg?_nc_cat=102&ccb=2&_nc_sid=0debeb&_nc_ohc=ZUTB0WRDMisAX9Ik0Zb&_nc_ht=scontent.fkul4-4.fna&oh=662af0254c9672e196e710c787382645&oe=6008E9F1" alt="drum-machine"/>
+                                <img className="card-img-top" src="https://scontent.fkul4-3.fna.fbcdn.net/v/t1.0-9/132325285_10158212320775892_1353193816898006335_n.jpg?_nc_cat=106&ccb=2&_nc_sid=0debeb&_nc_ohc=AioN_G36SSIAX9DL8LG&_nc_ht=scontent.fkul4-3.fna&oh=1fa9737009e319879be35e3ae4dac5a7&oe=600C866F" alt="drum-machine"/>
                                 <div className="card-body customDivCenter customCardText">
                                     <p className="card-title">Drum Machine</p>
                                 </div>
@@ -74,7 +82,8 @@ class MainReactComponent extends React.Component {
             
                 <section id="contact" className="customDivCenter customContactSection">
                     <h1>Profiles and Contact</h1>
-                    <div>
+                    <br/>
+                    <div className="row customContactItems">
                         <a href="https://linkedin.com/in/leejunyi" target="_blank" >
                              <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</button>
                         </a>
@@ -87,17 +96,22 @@ class MainReactComponent extends React.Component {
                         <a href="https://github.com/jylee2" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-github" aria-hidden="true"></i> GitHub</button>
                         </a>
+                    </div>
+                    <div className="row customContactItems">
                         <a href="https://www.youtube.com/channel/UCgZgJ73743xLn5ZzijlM6_g" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</button>
                         </a>
                         <a href="https://scholar.google.com/citations?user=k6YhcbUAAAAJ&hl=en" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fa fa-book" aria-hidden="true"></i> Google Scholar</button>
                         </a>
+                        <a href="https://jyleeblogging.wordpress.com/" target="_blank" >
+                            <button className="btn btn-lg btn-block customContactBtn"><i class="fa fa-bold" aria-hidden="true"></i> Blog</button>
+                        </a>
                     </div>
                 </section>
             
                 <footer className="customDivCenter customFooterSection bg-dark">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Jun</p>
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2021 Jun</p>
                 </footer>
             </div>
         );
