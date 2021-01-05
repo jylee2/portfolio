@@ -1,5 +1,5 @@
 //React component
-class MainReactComponent extends React.Component {
+class App extends React.Component {
     // Render
     render() {
         return (
@@ -30,7 +30,22 @@ class MainReactComponent extends React.Component {
                 </section>
             
                 <section id="projects" className="customDivCenter customProjectsSection">
-                    <h1 id="projects-h1">Personal Projects</h1>
+                    <h1 id="projects" className="classProjectHeader">Projects</h1>
+                    <div className="row">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-8">
+                            <div className="card-deck classProjectContainer">
+                                <a className="card text-center customCardShadow classCardSize" href="https://jylee2.github.io/agmo/" target="_blank">
+                                    <img className="card-img-top" src="https://scontent.fkul3-2.fna.fbcdn.net/v/t1.0-9/134413511_10158235656415892_517781070568791571_n.jpg?_nc_cat=105&ccb=2&_nc_sid=0debeb&_nc_ohc=KxHvYBDm_oAAX-7afZa&_nc_ht=scontent.fkul3-2.fna&oh=9024e883588777f5a257ef62d8b08375&oe=601A2146" alt="agmo-studio-login"/>
+                                    <div className="card-body customDivCenter customCardText">
+                                        <p className="card-title">Agmo Studio Login Page</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-md-2"></div>
+                    </div>
+                    <h1 id="personal-projects" className="classProjectHeader classPersonalProjects">Personal Projects</h1>
                     <div className="row">
                         <div className="col-md-2"></div>
                         <div className="col-md-8">
@@ -132,10 +147,17 @@ class MainReactComponent extends React.Component {
                 </section>
             
                 <footer className="customDivCenter customFooterSection bg-dark">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2021 Jun</p>
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i> <span id="footer-date"></span> Jun</p>
                 </footer>
             </div>
         );
     }
 };
-ReactDOM.render(<MainReactComponent/>, document.getElementById("react-div"))
+ReactDOM.render(<App/>, document.getElementById("react"))
+
+const setFooterDate = () => {
+    const currentYear = new Date().getFullYear();
+    //console.log(`The year is ${currentYear}`);
+    document.getElementById("footer-date").innerHTML = currentYear;
+};
+setFooterDate();

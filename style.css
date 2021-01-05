@@ -92,10 +92,21 @@ body {
   padding: 50px 20px 80px 20px;
 }
 
-#projects-h1{
+.classProjectHeader{
   font-size: 24pt;
   padding: 20px;
-  /* font-weight: bold; */
+}
+
+.classPersonalProjects {
+  padding-top: 60px;
+}
+
+.classProjectContainer {
+  justify-content: center;
+}
+
+.classCardSize{
+  max-width: 50%;
 }
 
 .customCardShadow {
@@ -152,4 +163,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 12pt;
   padding: 20px 0px 10px 0px;
+}
+
+/* bootstrap col-sm- */
+@media (max-width: 576px)  {
+
+  .classCardSize{
+    max-width: 100%;
+  }
+
 }
