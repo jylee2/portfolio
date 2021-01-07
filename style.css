@@ -8,6 +8,8 @@ body {
   /* Remove margins and paddings */
   margin: 0;
   padding: 0;
+  /* iPhone 5/SE */
+  min-width: 319px;
 
   /* Location of the image */
   background-image: url("https://scontent.fkul4-3.fna.fbcdn.net/v/t1.0-9/131818714_10158201465490892_781898171971940667_o.jpg?_nc_cat=107&ccb=2&_nc_sid=0debeb&_nc_ohc=JxuSDAI0vNUAX-gsOrk&_nc_ht=scontent.fkul4-3.fna&oh=0902edebbb3993e3979d8d1305b612f6&oe=600628B2");
@@ -92,7 +94,7 @@ body {
   padding: 50px 20px 80px 20px;
 }
 
-.classProjectHeader{
+.classSectionHeader{
   font-size: 24pt;
   padding: 20px;
 }
@@ -125,6 +127,20 @@ body {
   font-size: 13pt;
 }
 
+.customSkillsSection {
+  height: auto;
+  color: white;
+  padding: 50px 20px 40px 20px;
+}
+
+.classSkillsList{
+  font-size: 15pt;
+  font-family: monospace;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
 .customContactSection {
   height: auto;
   color: white;
@@ -132,14 +148,11 @@ body {
   padding: 50px 20px 40px 20px;
 }
 
-#contact h1 {
-  font-size: 24pt;
-  /* font-weight: bold; */
-}
-
 .customContactItems {
   /* Align the flex items at the center of the container, horizontally */
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .customContactBtn {
@@ -147,7 +160,7 @@ body {
   height: 60px;
   color: white;
   text-decoration: none;
-  font-size: 16pt;
+  font-size: 15pt;
   padding: 10px;
   border: solid;
   border-color: transparent;

@@ -15,6 +15,9 @@ class App extends React.Component {
                             <a className="nav-link" href="#projects">Projects</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -30,22 +33,22 @@ class App extends React.Component {
                 </section>
             
                 <section id="projects" className="customDivCenter customProjectsSection">
-                    <h1 id="projects" className="classProjectHeader">Projects</h1>
+                    <h1 id="work" className="classSectionHeader">Work</h1>
                     <div className="row">
                         <div className="col-md-2"></div>
                         <div className="col-md-8">
                             <div className="card-deck classProjectContainer">
-                                <a className="card text-center customCardShadow classCardSize" href="https://jylee2.github.io/agmo/" target="_blank">
-                                    <img className="card-img-top" src="https://scontent.fkul3-2.fna.fbcdn.net/v/t1.0-9/134413511_10158235656415892_517781070568791571_n.jpg?_nc_cat=105&ccb=2&_nc_sid=0debeb&_nc_ohc=KxHvYBDm_oAAX-7afZa&_nc_ht=scontent.fkul3-2.fna&oh=9024e883588777f5a257ef62d8b08375&oe=601A2146" alt="agmo-studio-login"/>
+                                <a className="card text-center customCardShadow classCardSize" href="https://jylee2.github.io/login-page/" target="_blank">
+                                    <img className="card-img-top" src="https://scontent.fkul3-2.fna.fbcdn.net/v/t1.0-9/134413511_10158235656415892_517781070568791571_n.jpg?_nc_cat=105&ccb=2&_nc_sid=0debeb&_nc_ohc=KxHvYBDm_oAAX-7afZa&_nc_ht=scontent.fkul3-2.fna&oh=9024e883588777f5a257ef62d8b08375&oe=601A2146" alt="login-page"/>
                                     <div className="card-body customDivCenter customCardText">
-                                        <p className="card-title">Agmo Studio Login Page</p>
+                                        <p className="card-title">Responsive Login Page</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div className="col-md-2"></div>
                     </div>
-                    <h1 id="personal-projects" className="classProjectHeader classPersonalProjects">Personal Projects</h1>
+                    <h1 id="personal-projects" className="classSectionHeader classPersonalProjects">Personal Projects</h1>
                     <div className="row">
                         <div className="col-md-2"></div>
                         <div className="col-md-8">
@@ -71,8 +74,8 @@ class App extends React.Component {
                             </div>
                             <br/>
                             <div className="card-deck">
-                                <a className="card text-center customCardShadow" href="https://u.jylee3.repl.co/" target="_blank">
-                                    <img className="card-img-top" src="https://scontent.fkul4-4.fna.fbcdn.net/v/t1.0-9/132883084_10158224166265892_5638813579019855644_n.jpg?_nc_cat=102&ccb=2&_nc_sid=0debeb&_nc_ohc=s0_tEQZu_wUAX8cFuEW&_nc_ht=scontent.fkul4-4.fna&oh=497ee912b31942e6d573886a9693e38e&oe=60104739" alt="url-shortener"/>
+                                <a className="card text-center customCardShadow" href="https://url.jylee3.repl.co/" target="_blank">
+                                    <img className="card-img-top" src="https://scontent.fkul3-4.fna.fbcdn.net/v/t1.0-9/134934980_10158240782930892_443643754042458013_n.jpg?_nc_cat=110&ccb=2&_nc_sid=0debeb&_nc_ohc=ZsE1wgEy8KEAX_EMhej&_nc_ht=scontent.fkul3-4.fna&oh=11f19b6d3d77c77adf1e7094b87a09ec&oe=601A9FC7" alt="url-shortener"/>
                                     <div className="card-body customDivCenter customCardText">
                                         <p className="card-title">URL Shortener Microservice</p>
                                     </div>
@@ -115,10 +118,19 @@ class App extends React.Component {
                         <div className="col-md-2"></div>
                     </div>
                 </section>
+
+                <section id="skills" className="bg-dark customDivCenter customSkillsSection">
+                    <h1 className="classSectionHeader">Skills</h1>
+                    <div className="classSkillsList">
+                        HTML &middot; CSS &middot; JavaScript &middot; Bootstrap &middot; React.js &middot; D3.js &middot; Node.js &middot; MongoDB
+                    </div>
+                    <div className="classSkillsList">
+                        Research &middot; Computational Fluid Dynamics &middot; Communication
+                    </div>
+                </section>
             
                 <section id="contact" className="customDivCenter customContactSection">
-                    <h1>Profiles and Contact</h1>
-                    <br/>
+                    <h1 className="classSectionHeader">Profiles and Contact</h1>
                     <div className="row customContactItems">
                         <a href="https://linkedin.com/in/leejunyi" target="_blank" >
                              <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</button>
@@ -126,19 +138,19 @@ class App extends React.Component {
                         <a href="mailto:jylee.blog@gmail.com" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fa fa-envelope" aria-hidden="true"></i> Email</button>
                         </a>
-                        <a href="https://www.freecodecamp.org/jylee" target="_blank" >
-                            <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-free-code-camp"></i> freeCodeCamp</button>
-                        </a>
                         <a href="https://github.com/jylee2" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-github" aria-hidden="true"></i> GitHub</button>
                         </a>
+                        <a href="https://www.freecodecamp.org/jylee" target="_blank" >
+                            <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-free-code-camp"></i> freeCodeCamp</button>
+                        </a>
                     </div>
                     <div className="row customContactItems">
-                        <a href="https://www.youtube.com/channel/UCgZgJ73743xLn5ZzijlM6_g" target="_blank" >
-                            <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</button>
-                        </a>
                         <a href="https://scholar.google.com/citations?user=k6YhcbUAAAAJ&hl=en" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fa fa-book" aria-hidden="true"></i> Google Scholar</button>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCgZgJ73743xLn5ZzijlM6_g" target="_blank" >
+                            <button className="btn btn-lg btn-block customContactBtn"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</button>
                         </a>
                         <a href="https://jyleeblogging.wordpress.com/" target="_blank" >
                             <button className="btn btn-lg btn-block customContactBtn"><i class="fa fa-bold" aria-hidden="true"></i> Blog</button>
