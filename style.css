@@ -36,7 +36,7 @@ body {
   z-index: -1;
 }
 
-.customBgText{
+.classBgText {
   /* Bring section to the back of the page */
   z-index: -1;
   font-size: 10pt;
@@ -49,13 +49,13 @@ body {
   opacity: 0.6;
 }
 
-.customNavbar {
+.classNavbar {
   /* Bring navbar to the front */
   z-index: 1;
 }
 
 /* Centre the <div> */
-.customDivCenter {
+.classDivCenter {
   width: 100%;
   display: flex;
   /* The flexible items are displayed vertically, as a column */
@@ -68,33 +68,34 @@ body {
   text-align: center;
 }
 
-.customHomeSection {
-  /* 100% of screen height */
+.classHomeSection {
+  /* 100% of screen view height */
   height: 100vh;
   padding: 0 20px 0 20px;
 }
 
-#home-title{
+.classHomeHeader {
   font-family: 'Comfortaa', cursive;
   font-size: 28pt;
   font-weight: bold;
   color: white;
 }
 
-#home-description{
+.classHomeText {
   /*font-family: monospace;*/
   font-size: 14pt;
   color: white;
 }
 
 /* Projects section */
-.customProjectsSection{
+
+.classProjectsSection {
   font-family: "Roboto", sans-serif;
   background-color: white;
   padding: 50px 20px 80px 20px;
 }
 
-.classSectionHeader{
+.classSectionHeader {
   font-size: 24pt;
   padding: 20px;
 }
@@ -107,55 +108,131 @@ body {
   justify-content: center;
 }
 
-.classCardSize{
-  max-width: 50%;
-}
-
-.customCardShadow {
+.classCardShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
 }
 
-.customCardShadow:hover {
-  /* Text doesn't get underlined */
-  text-decoration: none;
-  background-color: silver;
-  color: black;
+.classCardSize {
+  max-width: 50%;
 }
 
-.customCardText {
+/* Display framework used for each project */
+.classCardImgHoverDiv {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.classCardImgHoverText {
+  background-color: white;
+  /* color: black; */
+  /* font-size: 13pt; */
+  padding: 15px;
+}
+
+.classCardText {
   font-size: 13pt;
 }
 
-.customSkillsSection {
-  height: auto;
-  color: white;
-  padding: 50px 20px 40px 20px;
+.classCardShadow:hover img {
+  opacity: 0.2;
 }
 
-.classSkillsList{
+.classCardDeck:hover a {
+  /* Text doesn't get underlined */
+  text-decoration: none;
+  /* background-color: silver; */
+  color: black;
+}
+
+.classCardShadow:hover .classCardImgHoverDiv {
+  opacity: 1;
+}
+
+/* Skills Section */
+
+.classSkillsSection {
+  /* height: auto; */
+  color: white;
+  /* padding: 50px 20px 40px 20px; */
+}
+
+.classBgSkillsImg {
+  width: 100%;
+  height: 90vh;
+
+  background-image: url("https://scontent.fkul3-2.fna.fbcdn.net/v/t1.0-9/135874252_10158250083965892_4626209764143017917_o.jpg?_nc_cat=102&ccb=2&_nc_sid=0debeb&_nc_ohc=siVD7lPpkFYAX-Z_bkC&_nc_oc=AQm4Y1WddZGG2_8YS1Po0leEPDN-pol8cCECDTisALqhR5LpUBxABzGMwkUL-RAEaZ8&_nc_ht=scontent.fkul3-2.fna&oh=3d4277eb6e94c35bc92dd2f839a0d628&oe=60220187");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  
+  /* filter: brightness(60%); */
+  /* Bring navbar to the front */
+  /* z-index: 1; */
+}
+
+.classSkillsContent {
+  position: absolute;
+  /* padding: 10px; */
+}
+
+.classSkillsHeader {
+  margin: 10px;
+  font-size: 24pt;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.classSkillsText {
+  margin: 10px;
+  background-color: white;
+  color: black;
   font-size: 15pt;
-  font-family: monospace;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.customContactSection {
+/* Contacts Section */
+
+.classContactSection {
   height: auto;
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 50px 20px 40px 20px;
 }
 
-.customContactItems {
+.classContactItems {
   /* Align the flex items at the center of the container, horizontally */
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.customContactBtn {
+.classContactBtn {
   width: 200px;
   height: 60px;
   color: white;
@@ -166,12 +243,12 @@ body {
   border-color: transparent;
 }
 
-.customContactBtn:hover {
+.classContactBtn:hover {
   border-color: white;
   color: white;
 }
 
-.customFooterSection {
+.classFooterSection {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 12pt;
@@ -179,7 +256,7 @@ body {
 }
 
 /* bootstrap col-sm- */
-@media (max-width: 576px)  {
+@media (max-width: 575px)  {
 
   .classCardSize{
     max-width: 100%;
