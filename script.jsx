@@ -100,10 +100,14 @@ const App = () => {
                         </div>
                         <br/>
                         <div className="card-deck classCardDeck">
-                            <a className="card text-center classCardShadow" href="https://url.jylee3.repl.co/" target="_blank">
-                                <img className="card-img-top" src="https://scontent.fkul3-4.fna.fbcdn.net/v/t1.0-9/134934980_10158240782930892_443643754042458013_n.jpg?_nc_cat=110&ccb=2&_nc_sid=0debeb&_nc_ohc=ZsE1wgEy8KEAX_EMhej&_nc_ht=scontent.fkul3-4.fna&oh=11f19b6d3d77c77adf1e7094b87a09ec&oe=601A9FC7" alt="url-shortener"/>
+                            <a className="card text-center classCardShadow" href="https://whac-a-mole.jylee3.repl.co/" target="_blank">
+                                <img className="card-img-top" src="https://scontent.fkul2-3.fna.fbcdn.net/v/t1.0-9/137517441_10158259638550892_3708374777962844105_n.jpg?_nc_cat=107&ccb=2&_nc_sid=0debeb&_nc_ohc=onK006Tm7SgAX8EhKLy&_nc_ht=scontent.fkul2-3.fna&oh=f8be6ec52f6856e294453bc57bd96f7d&oe=60274B6D" alt="whac-a-mole"/>
                                 <div className="classCardImgHoverDiv">
                                     <div className="classCardImgHoverText">
+                                        &#60; Bootstrap /&#62;
+                                        <br/>
+                                        &#60; React.js /&#62;
+                                        <br/>
                                         &#60; Node.js /&#62;
                                         <br/>
                                         &#60; Express /&#62;
@@ -112,13 +116,15 @@ const App = () => {
                                     </div>
                                 </div>
                                 <div className="card-body classDivCenter classCardText">
-                                    <p className="card-title">URL Shortener Microservice</p>
+                                    <p className="card-title">Whac-A-Mole Game</p>
                                 </div>
                             </a>
                             <a className="card text-center classCardShadow" href="https://exercise-tracker-project.jylee3.repl.co/" target="_blank">
                                 <img className="card-img-top" src="https://scontent.fkul4-2.fna.fbcdn.net/v/t1.0-9/133509988_10158224166260892_4427338236374963706_n.jpg?_nc_cat=104&ccb=2&_nc_sid=0debeb&_nc_ohc=JuaIUCFjE4UAX9i1uMQ&_nc_ht=scontent.fkul4-2.fna&oh=096be123b1c9a4cc3bbb935fa45e24ed&oe=6012F25F" alt="exercise-tracker"/>
                                 <div className="classCardImgHoverDiv">
                                     <div className="classCardImgHoverText">
+                                        &#60; Bootstrap /&#62;
+                                        <br/>
                                         &#60; Node.js /&#62;
                                         <br/>
                                         &#60; Express /&#62;
@@ -134,6 +140,8 @@ const App = () => {
                                 <img className="card-img-top" src="https://scontent.fkul4-3.fna.fbcdn.net/v/t1.0-9/133289518_10158224166275892_3950579675764366296_o.jpg?_nc_cat=100&ccb=2&_nc_sid=0debeb&_nc_ohc=ZhYNQYCYYFgAX899OIA&_nc_ht=scontent.fkul4-3.fna&oh=0b57cd8aeab42ee912a241b03eec3b70&oe=60112C83" alt="file-metadata-microservice"/>
                                 <div className="classCardImgHoverDiv">
                                     <div className="classCardImgHoverText">
+                                        &#60; Bootstrap /&#62;
+                                        <br/>
                                         &#60; Node.js /&#62;
                                         <br/>
                                         &#60; Express /&#62;
