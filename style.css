@@ -12,8 +12,7 @@ body {
   min-width: 319px;
 
   /* Location of the image */
-  background-image: url("https://scontent.fkul4-3.fna.fbcdn.net/v/t1.0-9/131818714_10158201465490892_781898171971940667_o.jpg?_nc_cat=107&ccb=2&_nc_sid=0debeb&_nc_ohc=JxuSDAI0vNUAX-gsOrk&_nc_ht=scontent.fkul4-3.fna&oh=0902edebbb3993e3979d8d1305b612f6&oe=600628B2");
-  
+  background-image: url(../images/IMG_20161105_185953_3.jpg);
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -167,7 +166,7 @@ body {
   width: 100%;
   height: 90vh;
 
-  background-image: url("https://scontent.fkul3-2.fna.fbcdn.net/v/t1.0-9/135874252_10158250083965892_4626209764143017917_o.jpg?_nc_cat=102&ccb=2&_nc_sid=0debeb&_nc_ohc=siVD7lPpkFYAX-Z_bkC&_nc_oc=AQm4Y1WddZGG2_8YS1Po0leEPDN-pol8cCECDTisALqhR5LpUBxABzGMwkUL-RAEaZ8&_nc_ht=scontent.fkul3-2.fna&oh=3d4277eb6e94c35bc92dd2f839a0d628&oe=60220187");
+  background-image: url(../images/P2250528_Thesis_3.jpg);
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
