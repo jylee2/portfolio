@@ -31,9 +31,8 @@ const App = () => {
             </section>
         
             <section id="projects" className="classDivCenter classProjectsSection">
-                <h1 id="work" className="classSectionHeader">Work</h1>
+               {/*<h1 id="work" className="classSectionHeader">Work</h1>
                 <div className="row">
-                    {/* .col-md- ≥768px */}
                     <div className="col-md-2"></div>
                     <div className="col-md-8">
                         <div className="card-deck classCardDeck classProjectContainer">
@@ -51,7 +50,7 @@ const App = () => {
                         </div>
                     </div>
                     <div className="col-md-2"></div>
-                </div>
+                </div>*/}
                 <h1 id="personal-projects" className="classSectionHeader classPersonalProjects">Personal Projects</h1>
                 <div className="row">
                     {/* .col-xl- ≥1200px */}
